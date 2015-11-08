@@ -6,7 +6,8 @@
 	<?php 
 	//This includes the navigation code that will be
 	//included on all pages
-	include 'nav.php' 
+	include 'nav.php';
+	include 'dbconnection.php';	
 	?>
 	
 	<body>
