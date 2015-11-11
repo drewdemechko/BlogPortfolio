@@ -1,9 +1,4 @@
 /*This stylesheet contains the overall theme of the website*/
-nav
-{
-	width:100%;
-	margin: 20px 0;
-}
 
 nav ul
 {
@@ -13,17 +8,21 @@ nav ul
 
 nav ul li
 {
-	width:18%;
+	min-width:18%;
 	float:left; /*Aligns a horizontal nav bar*/
 	background-color: blue;
-	border-style: ridge;
-}
+	border-style:groove;
+	border-width:1px;
+	}
 
 nav li a
 {
+	/*Add a neat hover animation through javascript later*/
 	width: 100%;
 	display: block;
+	padding:5px;
 	text-decoration: none;
+	text-align:center;
 	color:white;
 }
 
