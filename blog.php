@@ -14,18 +14,19 @@
 	FROM blogentries
 	ORDER BY date");
 	
-	//Fetch all entries and store in array rows
+	//Fetch all entries and store in temp array rows
 	while($row = mysqli_fetch_array($entries))
 	{
 	//echo blog entries to page
-	echo "<p>", "<h3>", $row[0], "</h2>", "Date Posted: ", "<i>", $row[1], "</i>", "<br><br>", $row[2], "</p>";
+	echo "<div class='entry'><h3>$row[0]</h3><p>Date Posted: <i>$row[1]</i></p><br><br>$row[2]</div>";
 	}
 	
 	?>
 	
 	<body>
-		<form method="post" action="blog.php">
-		<textarea id="txtAddEntry" name="txtAddEntry" rows="20"></textarea>
+		<form method="post" action="addNewEntry.php">
+		<input type="text" id="txtTitle" name="txtTitle" value="Enter Title Here"/>
+		<textarea id="txtAddEntry" name="txtAddEntry" rows="20">Start Blogging..</textarea>
 		<input type="submit" name="btnAddEntry" id="btnAddEntry" onclick="" value="Add Entry">
 		</form>
 	</body>

@@ -3,6 +3,7 @@
 nav ul
 {
 	width:100%;
+	margin: 10px 20px;
 	list-style:none;
 }
 
@@ -28,6 +29,55 @@ nav li a
 
 body
 {
+	margin:0px 30px;
 	width: 100%;
-	max-width: 960px;
+	max-width: 915px;
 }
+
+p#about /*text on the About page*/
+{
+text-align:left;
+}
+
+#txtAddEntry, #txtTitle/*TextArea for new blog entry*/
+{/*Reminder to only make visible to admin*/
+	width:100%;
+	margin: 30px 10px 0px 10px;
+}
+
+#btnAddEntry /*Button on blog page*/
+{/*Reminder to only make visible to admin*/
+	float:right;
+}
+
+#btnSend /*Button on contact page*/
+{
+	float:right;
+}
+
+div#contactform /*left-side of contact page*/
+{
+	float:left;
+	width:75%;
+	overflow:hidden;
+}
+
+div#extrainfo /*right-side of contact page*/
+{
+	margin-left:15%;
+	width:25%;
+	overflow:hidden;
+}
+
+div.entry /*blog entry on blog page*/
+{
+border:solid blue;
+margin:10px;
+padding:5px;
+}
+
+div.entry h3, p
+{
+text-align:center;
+}
+
