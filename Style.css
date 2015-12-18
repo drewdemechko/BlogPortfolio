@@ -26,6 +26,27 @@ li a
 	color:white;
 }
 
+#aboutmepic, #aboutmepic2, #aboutmepic3
+{
+	width:30%;
+	height:30%;
+	margin:3%;
+}
+
+#aboutmepic
+{
+	float:right;
+}
+
+#aboutmepic2
+{
+	float:left;
+}
+
+#aboutmepic3
+{
+	float:right;
+}
 /*Allows drop down navigation functionality
 ul ul {
     position: absolute;

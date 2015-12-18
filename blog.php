@@ -28,7 +28,7 @@
 	$entries = mysqli_query($dbconn, 
 	"SELECT title, date, entry
 	FROM blogentries
-	ORDER BY date");
+	ORDER BY date DESC");
 	
 	//Fetch all entries and store in temp array rows
 	while($row = mysqli_fetch_array($entries))
