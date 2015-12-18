@@ -22,7 +22,7 @@
 			<h2>Subject</h2>
 			<input type="text" name="txtSubject" size="50%">
 			<h2>Your Message</h2>
-			<textarea id="txtMessage" name="txtMessage" rows="20" cols="60"></textarea><br>
+			<textarea id="txtMessage" name="txtMessage" rows="20" ></textarea><br>
 			<input type="submit" name="btnSend" id="btnSend" onclick="" value="Send">
 			</form>
 		</div>

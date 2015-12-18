@@ -1,4 +1,5 @@
 <!DOCTYPE html>	
+<html>
 <head>
 	<link rel="stylesheet" type="text/css" href="Style.css">
 </head>
@@ -21,5 +22,6 @@
 				<a href="/blog/blogportfolio/contact.php">Contact</a>
 			</li>
 		</ul>
+		<br><br>
 	</nav>
 </html>
