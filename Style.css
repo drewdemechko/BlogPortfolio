@@ -78,6 +78,11 @@ text-align:left;
 	width:100%;
 }
 
+#txtSearch /*TextArea used for pulling queries to search blog entries*/
+{
+	width:90%;
+}
+
 .input /*Form _POST data on Blog Page*/
 {
 	margin: 10px 10px 0px 10px;
