@@ -33,7 +33,7 @@ li a
 	margin:3%;
 }
 
-#aboutmepic
+#aboutmepic, #aboutmepic3
 {
 	float:right;
 }
@@ -43,10 +43,6 @@ li a
 	float:left;
 }
 
-#aboutmepic3
-{
-	float:right;
-}
 /*Allows drop down navigation functionality
 ul ul {
     position: absolute;
@@ -62,25 +58,19 @@ body
 {
 	margin:0px 30px;
 	padding:5px;
-	width: 100%;
-	max-width: 915px;
 	background-color:#99ccff;
 	color:#001933;
 }
 
-p#about /*text on the About page*/
-{
-text-align:left;
-}
-
-#txtAddEntry, #txtTitle/*TextArea for new blog entry*/
+#txtAddEntry, #txtBlogTitle, #txtProjectTitle, #txtProjectEntry, #txtTechnologies, #txtProjectURL, #txtDates /*TextArea for new blog entry*/
 {/*Reminder to only make visible to admin*/
-	width:90%;
+	width:97%;
 }
 
 #txtSearch /*TextArea used for pulling queries to search blog entries*/
 {
-	width:90%;
+	margin-left:35%;
+	width:30%;
 }
 
 .input /*Form _POST data on Blog Page*/
@@ -88,13 +78,15 @@ text-align:left;
 	margin: 10px 10px 0px 10px;
 }
 
-#btnAddEntry /*Button on blog page*/
+#btnAddEntry, #btnAddProject /*Button on blog page*/
 {/*Reminder to only make visible to admin*/
+	margin-top:10px;
 	margin-left:10px;
 }
 
 #btnSend /*Button on contact page*/
 {
+	margin-top:10px;
 	float:left;
 }
 
@@ -114,33 +106,34 @@ div#extrainfo /*right-side of contact page*/
 
 div.entry /*blog entry on blog page*/
 {
-border: 5px outset blue;
-margin:10px;
-padding:5px;
+	border: 5px outset blue;
+	margin:10px;
+	padding:5px;
 }
 
 div.entry h3, div.entry p
 {
-text-align:center;
+	text-align:center;
 }
 
 textarea, input
 {
-background-color:#cce5ff;
+	background-color:#cce5ff;
 }
 
 #txtMessage /*message textarea on Contact Page*/
 {
-width:59%;
+	width:59%;
 }
 
 .homeHeaders
 {
-text-align:center;
+	text-align:center;
 }
 
 .container
 {
+	width:90%;
 	border: 10px outset;
 	margin:10px;
 	padding:10px;
@@ -148,14 +141,14 @@ text-align:center;
 
 #blogdiv
 {
-	width:46%;
+	width:53%;
 	overflow:hidden;
 }
 
 #projectdiv
 {
   float:left;
-  width:30%;
+  width:25%;
   margin: 5px;
   overflow:hidden;
 }

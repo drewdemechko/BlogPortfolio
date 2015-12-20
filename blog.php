@@ -9,17 +9,17 @@
 	include 'nav.php';
 	include 'dbconnection.php';
 	?>
-	<body>
+	<br>
 	<form method="post" action="#">
 		<input type="text" class="input" id="txtSearch" name="txtSearch"/>
-		<input style="float:right-center;" type="submit" name="btnSearch" id="btnSearch" value="Search"/>
-		</select>
+		<input type="submit" name="btnSearch" id="btnSearch" value="Search"/>
+		<br><br>
 	</form>
 	<?php
 	//If post is set send form data to database
 	if(!empty($_POST['txtAddEntry']))
 	{
-	$title = $_POST['txtTitle'];
+	$title = $_POST['txtBlogTitle'];
 	$entry = $_POST['txtAddEntry'];
 	$currDate = date('Y-m-d');
 	
@@ -35,8 +35,9 @@
 	$entries = mysqli_query($dbconn,
 	"SELECT title, date, entry
 	FROM blogentries
-	WHERE title LIKE '%$criteria%'
-	OR entry LIKE '%criteria%'");
+	WHERE title LIKE '%$criteria%' 
+	OR entry LIKE '%$criteria%'
+	OR date LIKE '%$criteria%'");
 	}
 	else
 	{
@@ -52,14 +53,12 @@
 	//echo blog entries to page
 	echo "<div class='entry'><h3>$row[0]</h3><p>Date Posted: <i>$row[1]</i></p><br><br>$row[2]</div>";
 	}
-	
 	?>
 	
 		<form method="post" action="#">
-		<input type="text" class="input" id="txtTitle" name="txtTitle" value="Enter Title Here"/>
+		<input type="text" class="input" id="txtBlogTitle" name="txtBlogTitle" value="Enter Title Here"/>
 		<textarea class="input" id="txtAddEntry" name="txtAddEntry" rows="15">Start Blogging..</textarea>
-		<input type="submit" name="btnAddEntry" id="btnAddEntry" value="Add Entry">
+		<input type="submit" name="btnAddEntry" id="btnAddEntry" value="Add Entry"/>
 		</form>
-	</body>
 	</div>
 </html>

@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <!--This is the home page of the blog/portfolio website-->
 <html>
-
 <!--This is -->
 	<div class="container">
 	<?php 
 	//This includes the navigation code that will be
 	//included on all pages
 	include 'nav.php';
-	include 'dbconnection.php';
 	?>
-	
-	<body class="entry">
 		<h2>Intro</h2>
-		<p id="about">Hello! My name is Drew Demechko. I am currently a Junior attending the University of Central Oklahoma.
+		Hello! My name is Drew Demechko. I am currently a Junior attending the University of Central Oklahoma.
 		My expected graduation date is December 2016. I will graduate with a Bachelor's in Computer Science and a minor in Business Administration.
 		<img  id="aboutmepic"src="AboutMePicture.jpg"/>
 		<br><br>
@@ -124,19 +120,18 @@
 		The exciting thing is that there are Software Engineering Internships available within distance of my school! Unfortunately, there are only three internships that seem to be 
 		true "Software Engineering" and that I believe would benefit my future more than outside projects.
 		<br><br>
+		<img id="aboutmepic3" src="AboutMePicture3.jpg"/>
 		I was excited to get an opportunity to interview for all three of these companies. Out of the three there were two that I could see myself working at for years to come.
 		Both internships were at mid-sized companies, which means that the internship would more than likely include
 		tasks that a full-time employee also performed but at a fraction of the cost. This was a huge plus for me because I want to learn as much as I can.
 		After all that is what an internship is really for right?
 		<br><br>
-		<img id="aboutmepic3" src="AboutMePicture3.jpg"/>
 		<h2>As of 2016</h2>
 		I have heard back from the internships that I have applied for and had a few offers on the table.
 		However, after carefully reviewing all of my offers, two came in really competitively and had amazing perks to offer.
 		The perk that had the most significance on me at this point in time was a great culture, which both had. I 
 		feel like I could gain a lot of knowledge at both companies. Ultimately I decided to go with American Fidelity Assurance 
 		where I am currently employed as a Software Developer/Engineer intern in the ISD department. I am excited to become part of this team
-		and I am really looking forward to see what the future holds.</p><br><br>
-	</body>
+		and I am really looking forward to see what the future holds.<br><br>
 	</div>
 </html>
