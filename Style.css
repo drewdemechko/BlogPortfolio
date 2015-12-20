@@ -75,7 +75,7 @@ text-align:left;
 
 #txtAddEntry, #txtTitle/*TextArea for new blog entry*/
 {/*Reminder to only make visible to admin*/
-	width:100%;
+	width:90%;
 }
 
 #txtSearch /*TextArea used for pulling queries to search blog entries*/
@@ -90,7 +90,7 @@ text-align:left;
 
 #btnAddEntry /*Button on blog page*/
 {/*Reminder to only make visible to admin*/
-	float:right;
+	margin-left:10px;
 }
 
 #btnSend /*Button on contact page*/
@@ -100,14 +100,14 @@ text-align:left;
 
 div#contactform /*left-side of contact page*/
 {
-	float:left;
 	width:75%;
 	overflow:hidden;
 }
 
 div#extrainfo /*right-side of contact page*/
 {
-	margin-left:15%;
+	float:right;
+	margin:-500px 0px 0px 500px;
 	width:25%;
 	overflow:hidden;
 }
@@ -131,6 +131,40 @@ background-color:#cce5ff;
 
 #txtMessage /*message textarea on Contact Page*/
 {
-min-width:55%;
+width:59%;
+}
+
+.homeHeaders
+{
+text-align:center;
+}
+
+.container
+{
+	border: 10px outset;
+	margin:10px;
+	padding:10px;
+}
+
+#blogdiv
+{
+	width:46%;
+	overflow:hidden;
+}
+
+#projectdiv
+{
+  float:left;
+  width:30%;
+  margin: 5px;
+  overflow:hidden;
+}
+
+#jobdiv
+{
+   float:right;
+   width:15%;
+   margin:5px;
+   overflow:hidden;
 }
 
