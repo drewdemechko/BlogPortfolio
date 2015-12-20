@@ -3,6 +3,7 @@
 <html>
 
 <!--This is -->
+	<div class="container">
 	<?php 
 	//This includes the navigation code that will be
 	//included on all pages
@@ -13,4 +14,5 @@
 	<body>
 		
 	</body>
+	</div>
 </html>

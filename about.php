@@ -3,6 +3,7 @@
 <html>
 
 <!--This is -->
+	<div class="container">
 	<?php 
 	//This includes the navigation code that will be
 	//included on all pages
@@ -86,12 +87,12 @@
 		<img id="aboutmepic2" src="AboutMePicture2.jpeg"/>
 		I did end up visiting some schools that did offer a Software Engineering program at their university. At the time
 		not one university in Oklahoma offered the degree. After weighing my financial situation and taking my Grade point average in consideration,
-		it was simply not an option to obtain a degree in Software Engineering. Was my search at an end? Would I ever be able to be a Software
+		it was simply not an option for me to obtain a degree in Software Engineering. Was my search at an end? Would I ever be able to be a Software
 		Engineer or should I just switch my entire career path?
 		Thankfully, there is a similar program offered at most universities under the title "Computer Science".
 		In my opinion Computer Science is more of a survey course for students that are interested in technology and what they can do with it.
 		After reviewing all of the perks at the three universities around my area (Oklahoma State University, University of Oklahoma, and University of Central Oklahoma)
-		I decided that the courses offered at the University of Central Oklahoma gave me the best chance to follow my dream of being a Software Engineer while still being cost effective.
+		I decided that the courses offered at the University of Central Oklahoma would be the best option.
 		<br><br>
 		<h2>Gaining an Edge Over Others</h2>
 		I knew that the degree in Computer Science at a school that wasn't really known for producing high quality Software Engineers wouldn't give me all of the skills necessary to compete
@@ -136,5 +137,6 @@
 		feel like I could gain a lot of knowledge at both companies. Ultimately I decided to go with American Fidelity Assurance 
 		where I am currently employed as a Software Developer/Engineer intern in the ISD department. I am excited to become part of this team
 		and I am really looking forward to see what the future holds.</p><br><br>
-		</body>
+	</body>
+	</div>
 </html>

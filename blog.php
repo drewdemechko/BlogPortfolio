@@ -2,6 +2,7 @@
 <!--This is the home page of the blog/portfolio website-->
 <html>
 <!--This is -->
+	<div class="container">
 	<?php 
 	//This includes the navigation code that will be
 	//included on all pages
@@ -11,7 +12,7 @@
 	<body>
 	<form method="post" action="#">
 		<input type="text" class="input" id="txtSearch" name="txtSearch"/>
-		<input style="float:right-center;" type="submit" name="btnSearch" id="btnSearch" value="Search">
+		<input style="float:right-center;" type="submit" name="btnSearch" id="btnSearch" value="Search"/>
 		</select>
 	</form>
 	<?php
@@ -56,9 +57,9 @@
 	
 		<form method="post" action="#">
 		<input type="text" class="input" id="txtTitle" name="txtTitle" value="Enter Title Here"/>
-		<textarea class="input" id="txtAddEntry" name="txtAddEntry" rows="20">Start Blogging..</textarea>
+		<textarea class="input" id="txtAddEntry" name="txtAddEntry" rows="15">Start Blogging..</textarea>
 		<input type="submit" name="btnAddEntry" id="btnAddEntry" value="Add Entry">
 		</form>
 	</body>
-	
+	</div>
 </html>
