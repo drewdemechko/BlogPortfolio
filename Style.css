@@ -1,37 +1,59 @@
 /*This stylesheet contains the overall theme of the website*/
 
-
+/*Start styling for the navigation bar*/
 ul
 {
-	width:100%;
-	list-style:none;
+	list-style-type:none;
+	margin:0;
+	padding:2px;
+	overflow:hidden;
+	background-color:#000080;
 }
 
-ul li
+li
 {
-	min-width:18%;
-	float:left; /*Aligns a horizontal nav bar*/
-	background-color: blue;
-	border-style:groove;
-	border-width:1px;
+	display:inline;
+	font-size:18pt;
 }
 
 li a
 {
-	/*Add a neat hover animation through javascript later*/
-	width: 100%;
-	display: block;
-	padding:5px;
-	text-decoration: none;
-	text-align:center;
 	color:white;
+	text-align:center;
+	padding:14px 16px;
+	text-decoration:none;
 }
 
+li a:hover
+{
+	background-color: #00004c;
+}
+
+li a.active
+{
+	background-color:#0000ff;
+}
+
+/*End styling for the navigation bar*/
+
+div.content /*div on all pages for similar look-feel*/
+{
+	margin:5%;
+	background-color:#ffffff;
+	color:#00004c;
+}
+
+body
+{
+	margin:0;
+}
+
+/*Start styling for about page*/
 #aboutmepic, #aboutmepic2, #aboutmepic3
 {
 	width:30%;
 	height:30%;
-	margin:3%;
+	margin:2%;
 }
 
 #aboutmepic, #aboutmepic3
@@ -43,120 +65,90 @@ li a
 {
 	float:left;
 }
+/*End styling for about page*/
 
-/*Allows drop down navigation functionality
-ul ul {
-    position: absolute;
-    display: none;
-}
-
-li:hover ul {
-    display: block;
-}
-*/
-
-body
-{
-	margin:0px 30px;
-	padding:5px;
-	background-color:#99ccff;
-	color:#001933;
-}
-
-#txtAddEntry, #txtBlogTitle, #txtProjectTitle, #txtProjectEntry, #txtTechnologies, #txtProjectURL, #txtDates /*TextArea for new blog entry*/
+/*Start styling for blog and project pages*/
+#txtAddEntry, #txtBlogTitle, #txtProjectTitle, #txtProjectEntry, #txtTechnologies, #txtProjectURL, #txtDates, #txtDateStarted /*TextArea for new blog entry*/
 {/*Reminder to only make visible to admin*/
-	width:97%;
+	width:100%;
+	color:#00004c;
 }
 
-#txtSearch /*TextArea used for pulling queries to search blog entries*/
+#txtSearch /*used for pulling queries to search previous entries*/
 {
 	margin-left:35%;
 	width:30%;
+	color:#00004c;
 }
 
 .input /*Form _POST data on Blog Page*/
 {
-	margin: 10px 10px 0px 10px;
-}
-
-#btnAddEntry, #btnAddProject /*Button on blog page*/
-{/*Reminder to only make visible to admin*/
-	margin-top:10px;
-	margin-left:10px;
-}
-
-#btnSend /*Button on contact page*/
-{
-	margin-top:10px;
-	float:left;
-}
-
-div#contactform /*left-side of contact page*/
-{
-	width:75%;
-	overflow:hidden;
-}
-
-div#extrainfo /*right-side of contact page*/
-{
-	float:right;
-	margin:-500px 0px 0px 500px;
-	width:25%;
-	overflow:hidden;
+	margin: 10px 0px;
 }
 
 div.entry /*blog entry on blog page*/
 {
-	border: 5px outset blue;
-	margin:10px;
+	border: 5px outset #000080;
+	margin:10px 0px;
 	padding:5px;
 }
 
-div.entry h3, div.entry p
+div.entry h3, div.entry p, h1
 {
 	text-align:center;
 }
 
-textarea, input
+#btnAddProject, #btnSearch, #btnAddEntry, #btnSend /*Buttons for all pages*/
 {
-	background-color:#cce5ff;
+	border: 5px outset #000080;
+	background-color:#00004c;
+	color:#ffffff;
+}
+
+/*End styling for blog and project pages*/
+
+/*Start styling for contact page*/
+div#contactform /*left-side*/
+{
+	float:left;
+	width:60%;
+	overflow:hidden;
 }
 
 #txtMessage, #txtSubject, #txtEmail, #txtName /*message textarea on Contact Page*/
 {
-	width:65%;
-}
-
-.homeHeaders
-{
-	text-align:center;
-}
-
-.container
-{
 	width:90%;
-	border: 10px outset;
-	margin:10px;
-	padding:20px;
+	color:#00004c;
 }
 
+div#extrainfo /*right-side*/
+{
+	float:right;
+	overflow:hidden;
+}
+/*End styling for contact page*/
+
+/*Start styling for home page*/
 #blogdiv
 {
-
+	margin:0px 10px;
 	overflow:hidden;
 }
 
 #projectdiv
 {
-  float:left;
-  width:20%;
-  overflow:hidden;
+	margin:0px 10px;
+	float:left;
+	width:35%;
+	overflow:hidden;
 }
 
 #jobdiv
 {
-   float:right;
-   width:20%;
-   overflow:hidden;
+	margin:0px 10px;
+	float:right;
+	width:20%;
+	overflow:hidden;
 }
+/*End Styling for home page*/
 

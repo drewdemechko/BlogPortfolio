@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <!--This is the home page of the blog/portfolio website-->
 <html>
-<!--This is -->
-	<div class="container">
-	<?php 
-	//This includes the navigation code that will be
-	//included on all pages
-	include 'nav.php';
-	?>
+	
+<head>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+
+	<nav>
+		<ul>
+			<li>
+				<a href="/blog/blogportfolio">Home</a>
+			</li>
+			<li>
+				<a class="active" href="/blog/blogportfolio/about.php">About</a>
+			</li>
+			<li>
+				<a href="/blog/blogportfolio/projects.php">Projects</a>
+			</li>
+			<li>
+				<a href="/blog/blogportfolio/blog.php">Blog</a>
+			</li>
+			<li>
+				<a href="/blog/blogportfolio/contact.php">Contact</a>
+			</li>
+			<ul style="float:right; list-style-type:none;">
+				<li>
+				<a href="#">Login</a>
+				</li>
+			</ul>
+		</ul>
+	</nav>
+	
+	<div class="content">
 		<h2>Intro</h2>
 		Hello! My name is Drew Demechko. I am currently a Junior attending the University of Central Oklahoma.
 		My expected graduation date is December 2016. I will graduate with a Bachelor's in Computer Science and a minor in Business Administration.
@@ -133,5 +157,5 @@
 		feel like I could gain a lot of knowledge at both companies. Ultimately I decided to go with American Fidelity Assurance 
 		where I am currently employed as a Software Developer/Engineer intern in the ISD department. I am excited to become part of this team
 		and I am really looking forward to see what the future holds.<br><br>
-	</div>
+		</div>
 </html>

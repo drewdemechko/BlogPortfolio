@@ -2,26 +2,47 @@
 <!--This is the home page of the blog/portfolio website-->
 <html>
 
-<!--This is -->
-	<div class="container">
-	<?php 
-	//This includes the navigation code that will be
-	//included on all pages
-	include 'nav.php';
-	?>
-	
-		<div id="contactform">
+<head>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+
+	<nav>
+		<ul>
+			<li>
+				<a href="/blog/blogportfolio">Home</a>
+			</li>
+			<li>
+				<a href="/blog/blogportfolio/about.php">About</a>
+			</li>
+			<li>
+				<a href="/blog/blogportfolio/projects.php">Projects</a>
+			</li>
+			<li>
+				<a href="/blog/blogportfolio/blog.php">Blog</a>
+			</li>
+			<li>
+				<a class="active" href="/blog/blogportfolio/contact.php">Contact</a>
+			</li>
+			<ul style="float:right; list-style-type:none;">
+				<li>
+				<a href="#">Login</a>
+				</li>
+			</ul>
+		</ul>
+	</nav>
+	<div class="content">
+	<div id="contactform">
 		<!--Left-->
 			<form method="post" action="email.php">
 			<h2>Your Name</h2>
-			<input type="text" name="txtName" size="50%"/>
+			<input type="text" name="txtName" id="txtName"/>
 			<h2>Your Email</h2>
-			<input type="text" name="txtEmail" size="50%"/>
+			<input type="text" name="txtEmail" id="txtEmail"/>
 			<h2>Subject</h2>
-			<input type="text" name="txtSubject" size="50%"/>
+			<input type="text" name="txtSubject" id="txtSubject"/>
 			<h2>Your Message</h2>
 			<textarea id="txtMessage" name="txtMessage" rows="10" ></textarea><br>
-			<input type="submit" name="btnSend" id="btnSend" onclick="" value="Send">
+			<input type="submit" name="btnSend" class="input" id="btnSend" onclick="" value="Send">
 			</form>
 		</div>
 		<div id="extrainfo">
@@ -33,6 +54,6 @@
 		(405) 312-7191
 		<h2>On the web</h2>
 		<a href="https://www.linkedin.com/in/drew-demechko-331353a8">LinkedIn</a>
-		</div>
+	</div>
 	</div>
 </html>

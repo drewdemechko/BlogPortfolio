@@ -2,12 +2,38 @@
 <!--This php file sends an email using information gathered from the contact page form-->
 <!--Tutorial used to set up mail server on xampp https://www.youtube.com/watch?v=TO7MfDcM-Ho-->
 <html>
-	<div class="container">
-	<?php 
-	//This includes the navigation code that will be
-	//included on all pages
-	include 'nav.php';
+
+<head>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+
+	<nav>
+		<ul>
+			<li>
+				<a href="/blog/blogportfolio">Home</a>
+			</li>
+			<li>
+				<a href="/blog/blogportfolio/about.php">About</a>
+			</li>
+			<li>
+				<a href="/blog/blogportfolio/projects.php">Projects</a>
+			</li>
+			<li>
+				<a href="/blog/blogportfolio/blog.php">Blog</a>
+			</li>
+			<li>
+				<a href="/blog/blogportfolio/contact.php">Contact</a>
+			</li>
+			<ul style="float:right; list-style-type:none;">
+				<li>
+				<a href="#">Login</a>
+				</li>
+			</ul>
+		</ul>
+	</nav>
 	
+	<div class="content">
+	<?php 
 	//Send email to Owner of blog
 	if(!empty($_POST))
 	{

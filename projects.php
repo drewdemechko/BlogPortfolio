@@ -3,17 +3,43 @@
 <html>
 
 <!--This is -->
-	<div class="container">
 	<?php 
-	//This includes the navigation code that will be
-	//included on all pages
-	include 'nav.php'; 
 	include 'dbconnection.php';
 	?>
-	<br>
+	
+<head>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+
+	<nav>
+		<ul>
+			<li>
+				<a href="/blog/blogportfolio">Home</a>
+			</li>
+			<li>
+				<a href="/blog/blogportfolio/about.php">About</a>
+			</li>
+			<li>
+				<a class="active" href="/blog/blogportfolio/projects.php">Projects</a>
+			</li>
+			<li>
+				<a href="/blog/blogportfolio/blog.php">Blog</a>
+			</li>
+			<li>
+				<a href="/blog/blogportfolio/contact.php">Contact</a>
+			</li>
+			<ul style="float:right; list-style-type:none;">
+				<li>
+				<a href="#">Login</a>
+				</li>
+			</ul>
+		</ul>
+	</nav>
+	
+	<div class="content">
 		<form method="post" action="#">
 			<input type="text" class="input" id="txtSearch" name="txtSearch"/>
-			<input type="submit" name="btnSearch" id="btnSearch" value="Search"/>
+			<input type="submit" name="btnSearch" class="input" id="btnSearch" value="Search"/>
 			<br><br>
 		</form>
 	<?php
@@ -25,11 +51,11 @@
 	$link = $_POST['txtProjectURL'];
 	$about = $_POST['txtProjectEntry'];
 	$dateRange = $_POST['txtDates'];
-	$currDate = date('Y-m-d');
+	$dateStarted = $_POST['txtDateStarted'];
 	
 	mysqli_query($dbconn,
 	"INSERT INTO projects
-	VALUES('$title','$technologiesUsed','$link','$about','$dateRange','$currDate')");
+	VALUES('$title','$technologiesUsed','$link','$about','$dateRange','$dateStarted')");
 	}
 	
 	//Load blog entries from database
@@ -65,7 +91,8 @@
 			<input type="text" class="input" id="txtProjectTitle" name="txtProjectTitle" value="Enter Title Here"/>
 			<input type="text" class="input" id="txtTechnologies" name="txtTechnologies" value="Enter Technologies Used"/>
 			<input type="text" class="input" id="txtProjectURL" name="txtProjectURL" value="Enter Project URL address"/>
-			<input type="text" class="input" id="txtDates" name="txtDates" value="Enter the Date Range"/>
+			<input type="text" class="input" id="txtDates" name="txtDates" value="Enter the Range of the Project (Start - End)"/>
+			<input type="text" class="input" id="txtDateStarted" name="txtDateStarted" value="Enter the Date Started"/>
 			<textarea class="input" id="txtProjectEntry" name="txtProjectEntry" rows="15">Enter Project Summary...</textarea>
 			<input type="submit" name="btnAddProject" id="btnAddProject" value="Add Project"/>
 		</form>

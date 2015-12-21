@@ -2,17 +2,43 @@
 <!--This is the home page of the blog/portfolio website-->
 <html>
 <!--This is -->
-	<div class="container">
 	<?php 
-	//This includes the navigation code that will be
-	//included on all pages
-	include 'nav.php';
 	include 'dbconnection.php';
 	?>
-	<br>
+	
+<head>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+
+	<nav>
+		<ul>
+			<li>
+				<a href="/blog/blogportfolio">Home</a>
+			</li>
+			<li>
+				<a href="/blog/blogportfolio/about.php">About</a>
+			</li>
+			<li>
+				<a href="/blog/blogportfolio/projects.php">Projects</a>
+			</li>
+			<li>
+				<a class="active" href="/blog/blogportfolio/blog.php">Blog</a>
+			</li>
+			<li>
+				<a href="/blog/blogportfolio/contact.php">Contact</a>
+			</li>
+			<ul style="float:right; list-style-type:none;">
+				<li>
+				<a href="#">Login</a>
+				</li>
+			</ul>
+		</ul>
+	</nav>
+	
+	<div class="content">
 	<form method="post" action="#">
 		<input type="text" class="input" id="txtSearch" name="txtSearch"/>
-		<input type="submit" name="btnSearch" id="btnSearch" value="Search"/>
+		<input type="submit" name="btnSearch" class="input" id="btnSearch" value="Search"/>
 		<br><br>
 	</form>
 	<?php
