@@ -82,8 +82,8 @@
 	?>
 	
 		<form method="post" action="#">
-		<input type="text" class="input" id="txtBlogTitle" name="txtBlogTitle" value="Enter Title Here"/>
-		<textarea class="input" id="txtAddEntry" name="txtAddEntry" rows="15">Start Blogging..</textarea>
+		<input type="text" class="input" id="txtBlogTitle" name="txtBlogTitle" onfocus="if(this.value == 'Enter Title Here') this.value='';" value="Enter Title Here"/>
+		<textarea class="input" id="txtAddEntry" name="txtAddEntry" rows="15" onfocus="if(this.value == 'Start Blogging..') this.value='';">Start Blogging..</textarea>
 		<input type="submit" name="btnAddEntry" id="btnAddEntry" value="Add Entry"/>
 		</form>
 	</div>
