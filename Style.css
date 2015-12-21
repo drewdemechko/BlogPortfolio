@@ -1,9 +1,10 @@
 /*This stylesheet contains the overall theme of the website*/
+
+
 ul
 {
 	width:100%;
 	list-style:none;
-	float:center;
 }
 
 ul li
@@ -121,9 +122,9 @@ textarea, input
 	background-color:#cce5ff;
 }
 
-#txtMessage /*message textarea on Contact Page*/
+#txtMessage, #txtSubject, #txtEmail, #txtName /*message textarea on Contact Page*/
 {
-	width:59%;
+	width:65%;
 }
 
 .homeHeaders
@@ -136,28 +137,26 @@ textarea, input
 	width:90%;
 	border: 10px outset;
 	margin:10px;
-	padding:10px;
+	padding:20px;
 }
 
 #blogdiv
 {
-	width:53%;
+
 	overflow:hidden;
 }
 
 #projectdiv
 {
   float:left;
-  width:25%;
-  margin: 5px;
+  width:20%;
   overflow:hidden;
 }
 
 #jobdiv
 {
    float:right;
-   width:15%;
-   margin:5px;
+   width:20%;
    overflow:hidden;
 }
 
