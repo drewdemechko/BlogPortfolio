@@ -27,15 +27,11 @@
 			<li>
 				<a href="/blog/blogportfolio/contact.php">Contact</a>
 			</li>
-			<ul style="float:right; list-style-type:none;">
-				<li>
-				<a href="#">Login</a>
-				</li>
-			</ul>
 		</ul>
 	</nav>
 	
 	<div class="content">
+		
 	<h1>Recent Activity</h1>
 		<div class="entry" id="projectdiv">
 			<?php
@@ -50,7 +46,7 @@
 					{
 						//echo blog entries to page
 						echo "<div><h3>$row[0]</h3><p>Date Range: <i>$row[4]</i></p><br><br>$row[3]<br><br>
-						<p>Code Available at: <a href='$row[2]' target='_blank'>View Source Code</a></p><p>Technologies Used: <i>$row[1]</i></p></div>";
+						<p>Code: <a href='$row[2]' target='_blank'>View Source Code</a></p><p>Technologies Used: <i>$row[1]</i></p></div>";
 					}
 			?>
 		</div>

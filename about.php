@@ -23,15 +23,11 @@
 			<li>
 				<a href="/blog/blogportfolio/contact.php">Contact</a>
 			</li>
-			<ul style="float:right; list-style-type:none;">
-				<li>
-				<a href="#">Login</a>
-				</li>
-			</ul>
 		</ul>
 	</nav>
 	
 	<div class="content">
+	
 		<h2>Intro</h2>
 		Hello! My name is Drew Demechko. I am currently a Junior attending the University of Central Oklahoma.
 		My expected graduation date is December 2016. I will graduate with a Bachelor's in Computer Science and a minor in Business Administration.

@@ -28,15 +28,17 @@
 			<li>
 				<a href="/blog/blogportfolio/contact.php">Contact</a>
 			</li>
-			<ul style="float:right; list-style-type:none;">
-				<li>
-				<a href="#">Login</a>
-				</li>
-			</ul>
 		</ul>
 	</nav>
 	
 	<div class="content">
+	
+		<form method="post" action="#">
+			<input class="input" style="float:right;" type="submit" id="btnLogin" name="btnLogin" value="Login"/>
+			<input class="input" type="password" id="txtPassword" name="txtPassword" onfocus="if(this.value == 'password') this.value='';" value="password"/>
+			<input class="input" type="text" id="txtUser" name="txtUser" onfocus="if(this.value == 'username') this.value='';" value="username"/>
+		</form>
+	
 		<form method="post" action="#">
 			<input type="text" class="input" id="txtSearch" name="txtSearch"/>
 			<input type="submit" name="btnSearch" class="input" id="btnSearch" value="Search"/>
@@ -84,17 +86,38 @@
 	{
 	//echo projects to page
 	echo "<div class='entry'><h3>$row[0]</h3><p>Date Range: <i>$row[4]</i></p><br><br>$row[3]<br><br>
-	<p>Code Available at: <a href='$row[2]' target='_blank'>View Source Code</a></p><p>Technologies Used: <i>$row[1]</i></p></div>";	
+	<p>Code: <a href='$row[2]' target='_blank'>View Source Code</a></p><p>Technologies Used: <i>$row[1]</i></p></div>";	
 	}
-	?>
-		<form method="post" action="#">
-			<input type="text" class="input" id="txtProjectTitle" name="txtProjectTitle" onfocus="if(this.value == 'Enter Title Here') this.value='';" value="Enter Title Here"/>
-			<input type="text" class="input" id="txtTechnologies" name="txtTechnologies" onfocus="if(this.value == 'Enter Technologies Used') this.value='';" value="Enter Technologies Used"/>
-			<input type="text" class="input" id="txtProjectURL" name="txtProjectURL" onfocus="if(this.value == 'Enter Project URL address') this.value='';" value="Enter Project URL address"/>
-			<input type="text" class="input" id="txtDates" name="txtDates" onfocus="if(this.value == 'Enter the Range of the Project (Start - End)') this.value='';" value="Enter the Range of the Project (Start - End)"/>
-			<input type="text" class="input" id="txtDateStarted" name="txtDateStarted" onfocus="if(this.value == 'Enter the Date Started') this.value='';" value="Enter the Date Started"/>
-			<textarea class="input" id="txtProjectEntry" name="txtProjectEntry" rows="15" onfocus="if(this.value == 'Enter Project Summary...') this.value='';">Enter Project Summary...</textarea>
-			<input type="submit" name="btnAddProject" id="btnAddProject" value="Add Project"/>
-		</form>
+	
+		//If user has logged in
+	if(!empty($_POST['txtUser']) && !empty($_POST['txtPassword']))
+	{
+		$username = $_POST['txtUser'];
+		$password = $_POST['txtPassword'];
+		
+		//Fetch user's access rights 1-Admin 0-normal user
+		$fetchpriority = mysqli_fetch_assoc(mysqli_query($dbconn,
+		"SELECT accessRights
+		FROM account
+		WHERE username = '$username'
+		AND password = '$password'
+		LIMIT 1"));
+		
+		$prioritylevel = $fetchpriority['accessRights'];
+		
+		if($prioritylevel > 0) 
+		{
+			echo '<form method="post" action="#">
+					<input type="text" class="input" id="txtProjectTitle" name="txtProjectTitle" onfocus="if(this.value == "Enter Title Here") this.value="";" value="Enter Title Here"/>
+					<input type="text" class="input" id="txtTechnologies" name="txtTechnologies" onfocus="if(this.value == "Enter Technologies Used") this.value="";" value="Enter Technologies Used"/>
+					<input type="text" class="input" id="txtProjectURL" name="txtProjectURL" onfocus="if(this.value == "Enter Project URL address") this.value="";" value="Enter Project URL address"/>
+					<input type="text" class="input" id="txtDates" name="txtDates" onfocus="if(this.value == "Enter the Range of the Project (Start - End)") this.value="";" value="Enter the Range of the Project (Start - End)"/>
+					<input type="text" class="input" id="txtDateStarted" name="txtDateStarted" onfocus="if(this.value == "Enter the Date Started") this.value="";" value="Enter the Date Started"/>
+					<textarea class="input" id="txtProjectEntry" name="txtProjectEntry" rows="15" onfocus="if(this.value == "Enter Project Summary...") this.value="";">Enter Project Summary...</textarea>
+					<input type="submit" name="btnAddProject" id="btnAddProject" value="Add Project"/>
+				</form>';
+		}
+	}
+		?>
 	</div>
 </html>

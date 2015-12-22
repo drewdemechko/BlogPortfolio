@@ -23,14 +23,11 @@
 			<li>
 				<a class="active" href="/blog/blogportfolio/contact.php">Contact</a>
 			</li>
-			<ul style="float:right; list-style-type:none;">
-				<li>
-				<a href="#">Login</a>
-				</li>
-			</ul>
 		</ul>
 	</nav>
+	
 	<div class="content">
+	
 	<div id="contactform">
 		<!--Left-->
 			<form method="post" action="email.php">

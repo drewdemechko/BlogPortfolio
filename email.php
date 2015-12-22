@@ -24,15 +24,11 @@
 			<li>
 				<a href="/blog/blogportfolio/contact.php">Contact</a>
 			</li>
-			<ul style="float:right; list-style-type:none;">
-				<li>
-				<a href="#">Login</a>
-				</li>
-			</ul>
 		</ul>
 	</nav>
 	
 	<div class="content">
+		
 	<?php 
 	//Send email to Owner of blog
 	if(!empty($_POST))
@@ -47,8 +43,6 @@
 	}
 	?>
 	
-	<body>
-	<h1 class="homeHeaders">Thank you for leaving your feedback or request! <br> I will get back with you as soon as possible! <h1>
-	</body>
+	<h1>Thank you for the feedback! <br> I will get back with you as soon as possible!<h1>
 	</div>
 </html>

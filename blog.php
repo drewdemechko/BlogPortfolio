@@ -27,20 +27,23 @@
 			<li>
 				<a href="/blog/blogportfolio/contact.php">Contact</a>
 			</li>
-			<ul style="float:right; list-style-type:none;">
-				<li>
-				<a href="#">Login</a>
-				</li>
-			</ul>
 		</ul>
 	</nav>
-	
+
 	<div class="content">
+	
+		<form method="post" action="#">
+			<input class="input" style="float:right;" type="submit" id="btnLogin" name="btnLogin" value="Login"/>
+			<input class="input" type="password" id="txtPassword" name="txtPassword" onfocus="if(this.value == 'password') this.value='';" value="password"/>
+			<input class="input" type="text" id="txtUser" name="txtUser" onfocus="if(this.value == 'username') this.value='';" value="username"/>
+		</form>
+	
 	<form method="post" action="#">
 		<input type="text" class="input" id="txtSearch" name="txtSearch"/>
 		<input type="submit" name="btnSearch" class="input" id="btnSearch" value="Search"/>
 		<br><br>
 	</form>
+	
 	<?php
 	//If post is set send form data to database
 	if(!empty($_POST['txtAddEntry']))
@@ -79,12 +82,32 @@
 	//echo blog entries to page
 	echo "<div class='entry'><h3>$row[0]</h3><p>Date Posted: <i>$row[1]</i></p><br><br>$row[2]</div>";
 	}
-	?>
 	
-		<form method="post" action="#">
-		<input type="text" class="input" id="txtBlogTitle" name="txtBlogTitle" onfocus="if(this.value == 'Enter Title Here') this.value='';" value="Enter Title Here"/>
-		<textarea class="input" id="txtAddEntry" name="txtAddEntry" rows="15" onfocus="if(this.value == 'Start Blogging..') this.value='';">Start Blogging..</textarea>
-		<input type="submit" name="btnAddEntry" id="btnAddEntry" value="Add Entry"/>
-		</form>
+	//If user has logged in
+	if(!empty($_POST['txtUser']) && !empty($_POST['txtPassword']))
+	{
+		$username = $_POST['txtUser'];
+		$password = $_POST['txtPassword'];
+		
+		//Fetch user's access rights 1-Admin 0-normal user
+		$fetchpriority = mysqli_fetch_assoc(mysqli_query($dbconn,
+		"SELECT accessRights
+		FROM account
+		WHERE username = '$username'
+		AND password = '$password'
+		LIMIT 1"));
+		
+		$prioritylevel = $fetchpriority['accessRights'];
+		
+		if($prioritylevel > 0) 
+		{
+			echo '<form method="post" action="#">
+					<input type="text" class="input" id="txtBlogTitle" name="txtBlogTitle" onfocus="if(this.value == "Enter Title Here") this.value="";" value="Enter Title Here"/>
+					<textarea class="input" id="txtAddEntry" name="txtAddEntry" rows="15" onfocus="if(this.value == "Start Blogging..") this.value="";">Start Blogging..</textarea>
+					<input type="submit" name="btnAddEntry" id="btnAddEntry" value="Add Entry"/>
+				  </form>';
+		}
+	}
+	?>
 	</div>
 </html>

@@ -1,13 +1,20 @@
-/*This stylesheet contains the overall theme of the website*/
-
+/*This stylesheet contains the overall theme layout for the website*/
+/*Theme colors #0000ff, #0000e5, #0000cc, #ffffff, #000000*/
 /*Start styling for the navigation bar*/
+nav
+{
+	position:fixed;
+	width:100%;
+	top:0;
+}
+
 ul
 {
 	list-style-type:none;
 	margin:0;
 	padding:2px;
 	overflow:hidden;
-	background-color:#000080;
+	background-color:#0000e5;
 }
 
 li
@@ -21,12 +28,13 @@ li a
 	color:white;
 	text-align:center;
 	padding:14px 16px;
+	margin:0;
 	text-decoration:none;
 }
 
 li a:hover
 {
-	background-color: #00004c;
+	background-color:#0000cc;
 }
 
 li a.active
@@ -40,7 +48,7 @@ div.content /*div on all pages for similar look-feel*/
 {
 	margin:5%;
 	background-color:#ffffff;
-	color:#00004c;
+	color:#000000;
 }
 
 body
@@ -71,14 +79,28 @@ body
 #txtAddEntry, #txtBlogTitle, #txtProjectTitle, #txtProjectEntry, #txtTechnologies, #txtProjectURL, #txtDates, #txtDateStarted /*TextArea for new blog entry*/
 {/*Reminder to only make visible to admin*/
 	width:100%;
-	color:#00004c;
+	border-radius:15px;
+	padding:5px;
+	color:#000000;
 }
 
-#txtSearch /*used for pulling queries to search previous entries*/
+#txtSearch/*used for pulling queries to search previous entries*/
 {
-	margin-left:35%;
-	width:30%;
-	color:#00004c;
+	width:40%;
+	border-radius:15px;
+	padding:5px;
+	color:#000000;
+}
+
+#txtUser, #txtPassword
+{
+/*Login form*/
+	float:right;
+	width:80px;
+	border-radius:15px;
+	margin-right:5px;
+	padding:5px;
+	color:#000000;
 }
 
 .input /*Form _POST data on Blog Page*/
@@ -88,23 +110,35 @@ body
 
 div.entry /*blog entry on blog page*/
 {
-	border: 5px outset #000080;
+	border: 5px solid #0000cc;
+	border-radius:15px;
 	margin:10px 0px;
 	padding:5px;
 }
 
-div.entry h3, div.entry p, h1
+div.entry h3, div.entry p
 {
 	text-align:center;
 }
 
-#btnAddProject, #btnSearch, #btnAddEntry, #btnSend /*Buttons for all pages*/
+h1
 {
-	border: 5px outset #000080;
-	background-color:#00004c;
+	text-align:center;
+}
+
+#btnAddProject, #btnSearch, #btnAddEntry, #btnSend, #btnLogin /*Buttons for all pages*/
+{
+	border: 5px outset #0000cc;
+	border-radius:15px;
+	padding:2px;
+	background-color:#0000e5;
 	color:#ffffff;
 }
 
+textarea
+{
+	resize:none;
+}
 /*End styling for blog and project pages*/
 
 /*Start styling for contact page*/
@@ -118,7 +152,14 @@ div#contactform /*left-side*/
 #txtMessage, #txtSubject, #txtEmail, #txtName /*message textarea on Contact Page*/
 {
 	width:90%;
-	color:#00004c;
+	color:#000000;
+	padding:5px;
+	border-radius:15px;
+}
+
+:focus /*For all elements*/
+{
+	outline:none;
 }
 
 div#extrainfo /*right-side*/
@@ -139,7 +180,7 @@ div#extrainfo /*right-side*/
 {
 	margin:0px 10px;
 	float:left;
-	width:35%;
+	width:25%;
 	overflow:hidden;
 }
 
@@ -147,7 +188,7 @@ div#extrainfo /*right-side*/
 {
 	margin:0px 10px;
 	float:right;
-	width:20%;
+	width:25%;
 	overflow:hidden;
 }
 /*End Styling for home page*/
