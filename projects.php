@@ -120,4 +120,9 @@
 	}
 		?>
 	</div>
+	<footer>
+		<ul>
+			Copyright &copy; 2015 &middot; All Rights Reserved &middot; <a href="http://websiteaddress.com/">Drew Demechko's Personal Blog and Project Portfolio</a>
+		</ul>
+	</footer>
 </html>

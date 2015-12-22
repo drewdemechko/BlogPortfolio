@@ -154,4 +154,9 @@
 		where I am currently employed as a Software Developer/Engineer intern in the ISD department. I am excited to become part of this team
 		and I am really looking forward to see what the future holds.<br><br>
 		</div>
+		<footer>
+		<ul>
+			Copyright &copy; 2015 &middot; All Rights Reserved &middot; <a href="http://websiteaddress.com/">Drew Demechko's Personal Blog and Project Portfolio</a>
+		</ul>
+		</footer>
 </html>

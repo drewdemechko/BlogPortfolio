@@ -45,4 +45,9 @@
 	
 	<h1>Thank you for the feedback! <br> I will get back with you as soon as possible!<h1>
 	</div>
+	<footer>
+		<ul>
+			Copyright &copy; 2015 &middot; All Rights Reserved &middot; <a href="http://websiteaddress.com/">Drew Demechko's Personal Blog and Project Portfolio</a>
+		</ul>
+	</footer>
 </html>

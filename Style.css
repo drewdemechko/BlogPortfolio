@@ -8,6 +8,20 @@ nav
 	top:0;
 }
 
+footer
+{
+	position:fixed;
+	width:100%;
+	bottom: 0;
+	color:#ffffff;
+	text-align:center;
+}
+
+footer a
+{
+color:white;
+}
+
 ul
 {
 	list-style-type:none;
@@ -46,8 +60,7 @@ li a.active
 
 div.content /*div on all pages for similar look-feel*/
 {
-	margin:7% 5%;
-	margin-top:7%;
+	margin:5%;
 	background-color:#ffffff;
 	color:#000000;
 }
