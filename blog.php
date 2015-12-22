@@ -80,7 +80,7 @@
 	while($row = mysqli_fetch_array($entries))
 	{
 	//echo blog entries to page
-	echo "<div class='entry'><h3>$row[0]</h3><p>Date Posted: <i>$row[1]</i></p><br><br>$row[2]</div>";
+	echo "<div class='entry'><h3>$row[0]</h3><p>Date Posted: <i>$row[1]</i></p><br>$row[2]</div>";
 	}
 	
 	//If user has logged in

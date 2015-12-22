@@ -85,7 +85,7 @@
 	while($row = mysqli_fetch_array($entries))
 	{
 	//echo projects to page
-	echo "<div class='entry'><h3>$row[0]</h3><p>Date Range: <i>$row[4]</i></p><br><br>$row[3]<br><br>
+	echo "<div class='entry'><h3>$row[0]</h3><p>Date Range: <i>$row[4]</i></p><br>$row[3]<br>
 	<p>Code: <a href='$row[2]' target='_blank'>View Source Code</a></p><p>Technologies Used: <i>$row[1]</i></p></div>";	
 	}
 	
