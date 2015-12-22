@@ -102,8 +102,8 @@
 		if($prioritylevel > 0) 
 		{
 			echo '<form method="post" action="#">
-					<input type="text" class="input" id="txtBlogTitle" name="txtBlogTitle" onfocus="if(this.value == "Enter Title Here") this.value="";" value="Enter Title Here"/>
-					<textarea class="input" id="txtAddEntry" name="txtAddEntry" rows="15" onfocus="if(this.value == "Start Blogging..") this.value="";">Start Blogging..</textarea>
+					<input type="text" class="input" id="txtBlogTitle" name="txtBlogTitle" onfocus="if(this.value == &quot;Enter Title Here&quot;) this.value=&quot;&quot;;" value="Enter Title Here"/>
+					<textarea class="input" id="txtAddEntry" name="txtAddEntry" rows="15" onfocus="if(this.value == &quot;Start Blogging..&quot;) this.value=&quot;&quot;;">Start Blogging..</textarea>
 					<input type="submit" name="btnAddEntry" id="btnAddEntry" value="Add Entry"/>
 				  </form>';
 		}

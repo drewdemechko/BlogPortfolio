@@ -108,12 +108,12 @@
 		if($prioritylevel > 0) 
 		{
 			echo '<form method="post" action="#">
-					<input type="text" class="input" id="txtProjectTitle" name="txtProjectTitle" onfocus="if(this.value == "Enter Title Here") this.value="";" value="Enter Title Here"/>
-					<input type="text" class="input" id="txtTechnologies" name="txtTechnologies" onfocus="if(this.value == "Enter Technologies Used") this.value="";" value="Enter Technologies Used"/>
-					<input type="text" class="input" id="txtProjectURL" name="txtProjectURL" onfocus="if(this.value == "Enter Project URL address") this.value="";" value="Enter Project URL address"/>
-					<input type="text" class="input" id="txtDates" name="txtDates" onfocus="if(this.value == "Enter the Range of the Project (Start - End)") this.value="";" value="Enter the Range of the Project (Start - End)"/>
-					<input type="text" class="input" id="txtDateStarted" name="txtDateStarted" onfocus="if(this.value == "Enter the Date Started") this.value="";" value="Enter the Date Started"/>
-					<textarea class="input" id="txtProjectEntry" name="txtProjectEntry" rows="15" onfocus="if(this.value == "Enter Project Summary...") this.value="";">Enter Project Summary...</textarea>
+					<input type="text" class="input" id="txtProjectTitle" name="txtProjectTitle" onfocus="if(this.value == &quot;Enter Title Here&quot;) this.value=&quot;&quot;;" value="Enter Title Here"/>
+					<input type="text" class="input" id="txtTechnologies" name="txtTechnologies" onfocus="if(this.value == &quot;Enter Technologies Used&quot;) this.value=&quot;&quot;;" value="Enter Technologies Used"/>
+					<input type="text" class="input" id="txtProjectURL" name="txtProjectURL" onfocus="if(this.value == &quot;Enter Project URL address&quot;) this.value=&quot;&quot;;" value="Enter Project URL address"/>
+					<input type="text" class="input" id="txtDates" name="txtDates" onfocus="if(this.value == &quot;Enter the Range of the Project (Start - End)&quot;) this.value=&quot;&quot;;" value="Enter the Range of the Project (Start - End)"/>
+					<input type="text" class="input" id="txtDateStarted" name="txtDateStarted" onfocus="if(this.value == &quot;Enter the Date Project was Started&quot;) this.value=&quot;&quot;;" value="Enter the Date Project was Started"/>
+					<textarea class="input" id="txtProjectEntry" name="txtProjectEntry" rows="15" onfocus="if(this.value == &quot;Enter Project Summary...&quot;) this.value=&quot;&quot;;">Enter Project Summary...</textarea>
 					<input type="submit" name="btnAddProject" id="btnAddProject" value="Add Project"/>
 				</form>';
 		}
