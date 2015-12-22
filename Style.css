@@ -46,7 +46,8 @@ li a.active
 
 div.content /*div on all pages for similar look-feel*/
 {
-	margin:5%;
+	margin:7% 5%;
+	margin-top:7%;
 	background-color:#ffffff;
 	color:#000000;
 }
