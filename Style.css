@@ -1,6 +1,26 @@
 /*This stylesheet contains the overall theme layout for the website*/
 /*Theme colors #0000ff, #0000e5, #0000cc, #ffffff, #000000*/
-/*Start styling for the navigation bar*/
+
+/*Start styling for all pages*/
+div.content
+{
+	margin:5%;
+	background-color:#ffffff;
+	color:#000000;
+}
+
+body
+{
+	margin:0;
+}
+
+:focus /*For all elements*/
+{
+	outline:none;
+}
+/*End styling for all pages*/
+
+/*Start styling for navigation and footer*/
 nav
 {
 	position:fixed;
@@ -19,7 +39,7 @@ footer
 
 footer a
 {
-color:white;
+	color:white;
 }
 
 ul
@@ -55,20 +75,31 @@ li a.active
 {
 	background-color:#0000ff;
 }
+/*End styling for navigation and footer*/
 
-/*End styling for the navigation bar*/
-
-div.content /*div on all pages for similar look-feel*/
+/*Start styling for home/index page*/
+#blogdiv
 {
-	margin:5%;
-	background-color:#ffffff;
-	color:#000000;
+	margin:0px 10px;
+	overflow:hidden;
 }
 
-body
+#projectdiv
 {
-	margin:0;
+	margin:0px 10px;
+	float:left;
+	width:25%;
+	overflow:hidden;
 }
+
+#jobdiv
+{
+	margin:0px 10px;
+	float:right;
+	width:25%;
+	overflow:hidden;
+}
+/*End Styling for home page*/
 
 /*Start styling for about page*/
 #aboutmepic, #aboutmepic2, #aboutmepic3
@@ -89,7 +120,7 @@ body
 }
 /*End styling for about page*/
 
-/*Start styling for blog and project pages*/
+/*Start styling for project and blog pages*/
 #txtAddEntry, #txtBlogTitle, #txtProjectTitle, #txtProjectEntry, #txtTechnologies, #txtProjectURL, #txtDates, #txtDateStarted /*TextArea for new blog entry*/
 {/*Reminder to only make visible to admin*/
 	width:100%;
@@ -171,39 +202,10 @@ div#contactform /*left-side*/
 	border-radius:15px;
 }
 
-:focus /*For all elements*/
-{
-	outline:none;
-}
-
 div#extrainfo /*right-side*/
 {
 	float:right;
 	overflow:hidden;
 }
 /*End styling for contact page*/
-
-/*Start styling for home page*/
-#blogdiv
-{
-	margin:0px 10px;
-	overflow:hidden;
-}
-
-#projectdiv
-{
-	margin:0px 10px;
-	float:left;
-	width:25%;
-	overflow:hidden;
-}
-
-#jobdiv
-{
-	margin:0px 10px;
-	float:right;
-	width:25%;
-	overflow:hidden;
-}
-/*End Styling for home page*/
 

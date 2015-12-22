@@ -2,9 +2,9 @@
 <!--This is the home page of the blog/portfolio website-->
 <html>
 	
-<head>
-	<link rel="stylesheet" type="text/css" href="Style.css">
-</head>
+	<head>
+		<link rel="stylesheet" type="text/css" href="Style.css">
+	</head>
 
 	<nav>
 		<ul>
@@ -27,7 +27,6 @@
 	</nav>
 	
 	<div class="content">
-	
 		<h2>Intro</h2>
 		Hello! My name is Drew Demechko. I am currently a Junior attending the University of Central Oklahoma.
 		My expected graduation date is December 2016. I will graduate with a Bachelor's in Computer Science and a minor in Business Administration.
@@ -153,10 +152,11 @@
 		feel like I could gain a lot of knowledge at both companies. Ultimately I decided to go with American Fidelity Assurance 
 		where I am currently employed as a Software Developer/Engineer intern in the ISD department. I am excited to become part of this team
 		and I am really looking forward to see what the future holds.<br><br>
-		</div>
-		<footer>
+	</div>
+	
+	<footer>
 		<ul>
 			Copyright &copy; 2015 &middot; All Rights Reserved &middot; <a href="http://websiteaddress.com/">Drew Demechko's Personal Blog and Project Portfolio</a>
 		</ul>
-		</footer>
+	</footer>
 </html>
