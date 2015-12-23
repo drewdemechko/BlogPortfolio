@@ -192,6 +192,7 @@ div#contactform /*left-side*/
 	float:left;
 	width:60%;
 	overflow:hidden;
+	margin-bottom:40px;
 }
 
 #txtMessage, #txtSubject, #txtEmail, #txtName /*message textarea on Contact Page*/

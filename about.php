@@ -28,12 +28,12 @@
 	
 	<div class="content">
 		<h2>Intro</h2>
-		Hello! My name is Drew Demechko. I am currently a Junior attending the University of Central Oklahoma.
-		My expected graduation date is December 2016. I will graduate with a Bachelor's in Computer Science and a minor in Business Administration.
+		Hello, my name is Drew Demechko. I am currently attending the University of Central Oklahoma. I am a Senior where I 
+		am expected to graduate in December 2016. I will graduate with a Bachelor's degree in Computer Science and a minor in Business Administration.
 		<img  id="aboutmepic"src="AboutMePicture.jpg"/>
 		<br><br>
 		<h2>When Did I First Gain Interest In Technology, More Specifically Programming?</h2>
-		I first developed a passion for software development in junior high.
+		I first developed my passion for software development in junior high.
 		Like most kids my age, I spent most of my free time playing video games.
 		This one game in particular, a very popular MMORPG (massive multiplayer online role-playing game).
 		This game would take up most of my nights and weekends. I played religiously with four of my closest friends.

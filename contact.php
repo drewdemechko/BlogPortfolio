@@ -50,7 +50,8 @@
 			<h2>Phone</h2>
 			(405) 312-7191
 			<h2>On the web</h2>
-			<a href="https://www.linkedin.com/in/drew-demechko-331353a8">LinkedIn</a>
+			<a target="_blank" href="https://www.linkedin.com/in/drew-demechko-331353a8">LinkedIn</a><br><br>
+			<a target="_blank" href="https://github.com/drewdemechko/">GitHub</a>
 		</div>
 	</div>
 	
